@@ -27,3 +27,12 @@ SELECT
   COUNT(DISTINCT `Customer type`) AS unique_customer_types,
   COUNT(DISTINCT `Payment`) AS unique_payment_methods
 FROM `supermarket-sales-analytics.raw_supermarket_data.sales_records`;
+
+  -- STEP 6: Date and Time Sanity Check (Chronological Validity)
+SELECT 
+  MIN(`Date`) AS project_start_date, 
+  MAX(`Date`) AS project_end_date,
+  MIN(`Time`) AS earliest_transaction_time, 
+  MAX(`Time`) AS latest_transaction_time
+FROM
+  `supermarket-sales-analytics.raw_supermarket_data.sales_records`;
