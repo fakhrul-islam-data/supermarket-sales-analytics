@@ -50,7 +50,6 @@ ORDER BY
 -- STAGE 2: EXPLORATORY DATA ANALYSIS
 -- STEP 3: Product Line Revenue & Profitability Performance
 -- Objective: Identify top-earning categories, volume drivers, and customer satisfaction scores
-
 SELECT 
   `Product line`,
   COUNT(*) AS total_transactions,
