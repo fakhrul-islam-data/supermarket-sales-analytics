@@ -71,3 +71,26 @@ ORDER BY
 3. UNDERPERFORMING CATEGORY: Health and beauty sits at the bottom of supermarket performance, trailing 
    the leading category by nearly $7,000 in revenue, representing a key focus area for inventory optimization.
 */
+
+-- STAGE 2: EXPLORATORY DATA ANALYSIS
+-- STEP 4: Hourly Checkout Traffic & Sales Patterns
+-- Objective: Analyze peak shopping hours to optimize store staffing and understand revenue spikes
+SELECT 
+  EXTRACT(HOUR FROM PARSE_TIME('%H:%M', `Time`)) AS checkout_hour,
+  COUNT(*) AS total_transactions,
+  ROUND(SUM(`Total`), 2) AS hourly_revenue
+FROM 
+  `supermarket-sales-analytics.raw_supermarket_data.sales_records`
+GROUP BY 
+  checkout_hour
+ORDER BY 
+  checkout_hour ASC;
+
+/* STEP 4 KEY OBSERVATIONS & INSIGHTS:
+1. THE MIDDAY GOLDEN HOUR: Hour 13 (1:00 PM - 1:59 PM) is the supermarket's absolute peak, 
+   generating the highest transaction volume (103 sales) and top hourly revenue of$34,723.23.
+2. STRONG MID-MORNING HOUR: A secondary traffic spike occurs early at Hour 10 (10:00 AM), 
+   bringing in 101 transactions and outperforming the surrounding midday hours.
+3. LATE-AFTERNOON: Foot traffic drops significantly between 4:00 PM and 6:00 PM (Hours 16-17), 
+   representing the quietest operational window with transactions dipping into the 70s.
+*/
