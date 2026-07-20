@@ -87,10 +87,7 @@ ORDER BY
   checkout_hour ASC;
 
 /* STEP 4 KEY OBSERVATIONS & INSIGHTS:
-1. THE MIDDAY GOLDEN HOUR: Hour 13 (1:00 PM - 1:59 PM) is the supermarket's absolute peak, 
-   generating the highest transaction volume (103 sales) and top hourly revenue of$34,723.23.
-2. STRONG MID-MORNING HOUR: A secondary traffic spike occurs early at Hour 10 (10:00 AM), 
-   bringing in 101 transactions and outperforming the surrounding midday hours.
-3. LATE-AFTERNOON: Foot traffic drops significantly between 4:00 PM and 6:00 PM (Hours 16-17), 
-   representing the quietest operational window with transactions dipping into the 70s.
+1. EVENING & MIDDAY PEAKS: Hour 19 (7:00 PM) is the supermarket's absolute peak (113 sales, $39,699.51), closely followed by the Hour 13 (1:00 PM) lunch rush (103 sales, $34,723.23).
+2. STRONG MID-MORNING HOUR: A secondary traffic spike occurs early at Hour 10 (10:00 AM), bringing in 101 transactions.
+3. LOW-TRAFFIC WINDOWS: Foot traffic drops significantly during late afternoon (Hour 17 / 5:00 PM) and late evening (Hour 20 / 8:00 PM), dipping down into the 70s (74-75 transactions).
 */
