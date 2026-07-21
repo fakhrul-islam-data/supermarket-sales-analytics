@@ -70,3 +70,7 @@ Based on these findings, here are the top three actions recommended for store ma
 1. ⏰ **Realign Cashier Schedules:** Move register staff away from quiet periods like 5:00 PM and 8:00 PM to cover the heavy 1:00 PM lunch surge and 7:00 PM evening rush to cut down checkout queue times.
 2. 📱 **Target E-Wallet Shoppers at Checkout:** Place QR code loyalty enrollment prompts directly on payment terminals. Converting even 15% of E-wallet walk-ins ($58.2k volume) into members will significantly raise customer lifetime value.
 3. 🏷️ **Adopt Flexible Category Margins:** Move away from the uniform 4.76% margin model. Slightly increase margins on high-volume staples like Food & Beverages, and bundle low-cost Fashion Accessories to drive higher total basket sizes.
+
+---
+
+* **[Supermarket Sales Analytics Dashboard (Tableau Public)](https://public.tableau.com/app/profile/m.m.fakhrul.islam/viz/supermarket-sales-analytics-dashboard/SupermarketSalesPerformanceDashboard)**: Developed an interactive visual analytics report tracking hourly sales trends, product line performance, and customer payment preferences.
